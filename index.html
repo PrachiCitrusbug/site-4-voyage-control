@@ -37,7 +37,7 @@
                         <div class="col-auto p-0">
                             <img src="assets/images/alarm-bell.svg" alt="notification icon" style="margin: 24px 10px 24px 0px"> <!--icon needs addition of notification digits-->
                         </div>
-                        <div class="col-auto">
+                        <div class="col-auto p-0">
                             <div class="dropdown">
                                 <p class="dropdown-toggle dropdown-menu-button" id="dropdown-menu-button" data-bs-toggle="dropdown" aria-expanded="false">CS</p>
                                 <ul class="dropdown-menu" aria-labelledby="dropdown-menu-button">
@@ -50,127 +50,128 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-auto p-0" id="side-menu-collapse" style="width: 224px; max-width: 100%;">
-                    <div class="row row-cols-1 g-0">
-                        <div class="col-auto p-0">
-                            <a href="#">
-                                <button class="new-booking"><img src="assets/images/actions-plus.svg" alt="plus icon"><span>New Booking</span></button>
-                            </a>
-                        </div>
-                        <div class="options-menu">
-                            <div class="col-auto options-menu-item">
-                                <img src="assets/images/booking-list.svg" alt="booking list icon"><span>Booking List</span>
-                            </div>
-                            <div class="col-auto options-menu-item">
-                                <img src="assets/images/calendar.svg" alt="Calendar icon"><span>
-                                Calendar</span>
-                            </div>
-                            <div class="col-auto options-menu-item">
-                                <img src="assets/images/two-people.svg" alt="Two people icon"><span>
-                                User Management</span>
-                            </div>
-                            <div class="col-auto options-menu-item">
-                                <img src="assets/images/configure.svg" alt="Project Management icon"><span>
-                                Project Management</span>
-                            </div>
-                            <div class="col-auto options-menu-item">
-                                <div class="row row-cols-1 gx-0">
-                                    <div class="col-auto" style="margin: 8px;">
-                                        <img src="assets/images/planet-earth.svg" alt="planet earth icon"><span>
-                                        Site Details</span>
+                <div class="menu-dashboard-content">
+                    <div class="side-menu">
+                        <div class="col-auto p-0 side-menu-collapse" id="side-menu-collapse">
+                            <div class="row row-cols-1 g-0">
+                                <div class="col-auto p-0">
+                                    <a href="#">
+                                        <button class="new-booking"><img src="assets/images/actions-plus.svg" alt="plus icon"><span>New Booking</span></button>
+                                    </a>
+                                </div>
+                                <div class="options-menu">
+                                    <div class="col-auto options-menu-item">
+                                        <img src="assets/images/booking-list.svg" alt="booking list icon"><span>Booking List</span>
                                     </div>
-                                    <div class="col-auto" style="margin: 8px;">
-                                        <img src="assets/images/clock.svg" alt="clock icon"><span>
-                                        Availability</span>
+                                    <div class="col-auto options-menu-item">
+                                        <img src="assets/images/calendar.svg" alt="Calendar icon"><span>
+                                        Calendar</span>
+                                    </div>
+                                    <div class="col-auto options-menu-item">
+                                        <img src="assets/images/two-people.svg" alt="Two people icon"><span>
+                                        User Management</span>
+                                    </div>
+                                    <div class="col-auto options-menu-item">
+                                        <img src="assets/images/configure.svg" alt="Project Management icon"><span>
+                                        Project Management</span>
+                                    </div>
+                                    <div class="col-auto options-menu-item">
+                                        <div class="row row-cols-1 gx-0">
+                                            <div class="col-auto" style="margin: 8px;">
+                                                <img src="assets/images/planet-earth.svg" alt="planet earth icon"><span>
+                                                Site Details</span>
+                                            </div>
+                                            <div class="col-auto" style="margin: 8px;">
+                                                <img src="assets/images/clock.svg" alt="clock icon"><span>
+                                                Availability</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="collapse-side-menu-toggler options-menu-item" style="background-color: inherit;"> <!--collapse options toggler-->
+                            <a href="#side-menu-collapse" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="side-menu-collapse">
+                            <img src="assets/images/collapse.svg" alt="collapse arrow icon"><span style="margin-top:4px;">
+                            Collapse</span></a>
                         </div>
                     </div>
-                </div>
-                <div class="collapse-side-menu-toggler options-menu-item"> <!--collapse options toggler--> 
-                    <a href="#side-menu-collapse" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="side-menu-collapse">
-                    <img src="assets/images/collapse.svg" alt="collapse arrow icon"><span>
-                    Collapse</span></a>
-                </div>
-                <div class="col-lg-10 g-0">
-                    <div class="dashboard-view" id="dashboard-collapse">
-                        <!--dashboard banner-->
-                        <div class="banner">
-                            <img class="banner-img" src="assets/images/banner.jpg" alt="main street image">
-                            <div class="banner-content">
-                                <img src="assets/images/logo.png" alt="Logo image">
-                                <div class="banner-text">
-                                    <p>WELCOME TO</p>
-                                    <h1>Main Street Tower</h1>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- availability bar -->
-                        <div class="row g-0 availability-info">
-                            <div class="col">
-                                <img src="assets/images/Location.svg" alt="location icon">
-                                <address>555 Main St. Township, CA 90001</address>
-                            </div>
-                            <div class="col">
-                                <img src="assets/images/time-black.svg" alt="clock icon">
-                                <p>7am - 5pm (PDT)</p>
-                            </div>
-                            <div class="col">
-                                <img src="assets/images/calendar-black.svg" alt="calendar icon">
-                                <p>Monday - Friday</p>
-                            </div>
-                        </div>
-                        <div class="row g-0">
-                            <div class="col-12">
-                                <h1>Site Contacts</h1>
-                            </div>
-                            <div class="col-6">
-                                <div class="row row-cols-1 row-cols-md-2 g-3">
-                                    <div class="col">
-                                        <div class="card">
-                                            <h6 class="card-subtitle mb-2">Card subtitle</h6>
-                                            <h5 class="card-title">Primary card title</h5>
-                                            <p class="card-text">+121 347395430</p>
-                                            <p class="card-text">youremail@gmail.com</p>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card">
-                                            <h6 class="card-subtitle mb-2">Card subtitle</h6>
-                                            <h5 class="card-title">Primary card title</h5>
-                                            <p class="card-text">+121 347395430</p>
-                                            <p class="card-text">youremail@gmail.com</p>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card">
-                                            <h6 class="card-subtitle mb-2">Card subtitle</h6>
-                                            <h5 class="card-title">Primary card title</h5>
-                                            <p class="card-text">+121 347395430</p>
-                                            <p class="card-text">youremail@gmail.com</p>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card">
-                                            <h6 class="card-subtitle mb-2">Card subtitle</h6>
-                                            <h5 class="card-title">Primary card title</h5>
-                                            <p class="card-text">+121 347395430</p>
-                                            <p class="card-text">youremail@gmail.com</p>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card">
-                                            <h6 class="card-subtitle mb-2">Card subtitle</h6>
-                                            <h5 class="card-title">Primary card title</h5>
-                                            <p class="card-text">+121 347395430</p>
-                                            <p class="card-text">youremail@gmail.com</p>
-                                        </div>
+                    <div class="col g-0">
+                        <div class="dashboard-view" id="dashboard-collapse">
+                            <!--dashboard banner-->
+                            <div class="banner">
+                                <img class="banner-img" src="assets/images/banner.jpg" alt="main street image">
+                                <div class="banner-content">
+                                    <img src="assets/images/logo.png" alt="Logo image">
+                                    <div class="banner-text">
+                                        <p>WELCOME TO</p>
+                                        <h1>Main Street Tower</h1>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="info">
+                            <!-- availability bar -->
+                            <div class="row g-0 availability-info">
+                                <div class="col-2">
+                                    <img src="assets/images/Location.svg" alt="location icon">
+                                    <p>555 Main St.<br>Township, CA 90001</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="assets/images/time-black.svg" alt="clock icon">
+                                    <p>7am - 5pm (PDT)</p>
+                                </div>
+                                <div class="col-2">
+                                    <img src="assets/images/calendar-black.svg" alt="calendar icon">
+                                    <p>Monday - Friday</p>
+                                </div>
+                            </div>
+                            <!--Site Contacts-->
+                            <div class="row g-0">
+                                <h3 class="site-head">Site Contacts</h3>
+                                <div class="col-auto">
+                                    <div class="row row-cols-auto g-0 site-cards">
+                                        <div class="col">
+                                            <div class="card">
+                                                <h6 class="card-subtitle">General Foreman</h6>
+                                                <h5 class="card-title">Tony Doe</h5>
+                                                <a href="tel:+(510) 577-9987" class="card-text site-number">(510) 577-9987</a>
+                                                <a href="mailto:youremail@gmail.com" class="card-text site-mail">youremail@gmail.com</a>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card">
+                                                <h6 class="card-subtitle">Building - Superintendent</h6>
+                                                <h5 class="card-title">Adam Doe</h5>
+                                                <a href="tel:+(510) 577-9987" class="card-text site-number">(510) 577-9987</a>
+                                                <a href="mailto:youremail@gmail.com" class="card-text site-mail">youremail@gmail.com</a>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card">
+                                                <h6 class="card-subtitle">Site - Superintendent</h6>
+                                                <h5 class="card-title">Kyle Doe</h5>
+                                                <a href="tel:+(510) 577-9987" class="card-text site-number">(510) 577-9987</a>
+                                                <a href="mailto:youremail@gmail.com" class="card-text site-mail">youremail@gmail.com</a>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card">
+                                                <h6 class="card-subtitle">Senior - Superintendent</h6>
+                                                <h5 class="card-title">Brett Doe</h5>
+                                                <a href="tel:+(510) 577-9987" class="card-text site-number">(510) 577-9987</a>
+                                                <a href="mailto:youremail@gmail.com" class="card-text site-mail">youremail@gmail.com</a>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card">
+                                                <h6 class="card-subtitle">Safety Manager</h6>
+                                                <h5 class="card-title">Jack Doe</h5>
+                                                <a href="tel:+(510) 577-9987" class="card-text site-number">(510) 577-9987</a>
+                                                <a href="mailto:youremail@gmail.com" class="card-text site-mail">youremail@gmail.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col info">
                                     <p class="text-wrap">
                                         This is where you can add in information to help your users manage their deliveries better.<br><br>
                                         Site access times 9am - 5pm <br><br>
